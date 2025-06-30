@@ -7,6 +7,10 @@ kotlin {
   jvmToolchain(17)
 }
 
+lint {
+  baseline = file("lint-baseline.xml")
+}
+
 dependencies {
   compileOnly deps.lint.api
   compileOnly deps.lint.checks
