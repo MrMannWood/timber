@@ -391,7 +391,7 @@ actual class Timber actual private constructor() {
         "NON_FINAL_MEMBER_IN_OBJECT" // For japicmp check.
     )
     @JvmStatic
-    open inline fun asTree(): Tree = this
+    actual open inline fun asTree(): Tree = this
 
     /** Set a one-time tag for use on the next logging call. */
     @JvmStatic actual fun tag(tag: String): Tree {
